@@ -1,4 +1,4 @@
-# HotelBookingProjetVanilla
+# HotelBookingProjetBloc2
 Projet fil rouge Ilaria : Projet #3 - Application Web de Réservation en Ligne
 
 Ce projet répond au cahier des charges du bloc Front-End et Back-End de la formation Développeur Web Full Stack.  
@@ -41,34 +41,33 @@ Chaque partie possède un fichier README.md spécifique pour détailler son inst
 ```
 hotel-booking/
 ├── frontend/
-│   ├── index.html
-│   ├── room.html
-│   ├── booking.html
+│   ├── index.html             ← page d’accueil (liste des chambres)
+│   ├── room.html              ← détails d’une chambre
+│   ├── booking.html           ← formulaire de réservation
 │   ├── css/
-│   │   ├── bootstrap.min.css
 │   │   ├── style.css
 │   │   └── responsive.css
 │   ├── js/
-│   │   ├── main.js
-│   │   ├── booking.js
-│   │   ├── api.js
-│   │   └── utils.js
+│   │   ├── main.js            ← chargement / affichage des chambres
+│   │   ├── booking.js         ← gestion du formulaire
+│   │   ├── api.js             ← requêtes fetch vers backend
+│   │   └── utils.js           ← fonctions génériques
 │   └── assets/
 │       ├── images/
 │       └── icons/
 │
 ├── backend/
-│   ├── server.js
+│   ├── server.js              ← serveur Node.js pur
 │   ├── data/
-│   │   ├── rooms.json
-│   │   └── bookings.json
+│   │   ├── rooms.json         ← données chambres
+│   │   └── bookings.json      ← réservations enregistrées
 │   └── modules/
-│       ├── router.js
-│       ├── rooms.js
-│       └── bookings.js
+│       ├── router.js          ← gestion des routes HTTP
+│       ├── rooms.js           ← logique métier chambres
+│       └── bookings.js        ← logique métier réservations
 │
 ├── scripts/
-│   └── seed.js
+│   └── seed.js                ← script pour initialiser les fichiers JSON
 │
 └── README.md
 ```
