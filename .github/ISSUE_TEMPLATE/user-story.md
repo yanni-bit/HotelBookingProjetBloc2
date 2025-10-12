@@ -6,13 +6,13 @@ labels: ["story", "frontend"]
 assignees: ["yanni-bit"]
 ---
 
-## 🎯 Objectif
+## Objectif
 Décrire ici clairement le but de la story.  
 *(Ex : Créer la page d’accueil affichant la liste des chambres.)*
 
 ---
 
-## ✅ Critères d’acceptation
+## Critères d’acceptation
 Les conditions qui doivent être remplies pour considérer la story comme “terminée”.
 
 - [ ] Le rendu correspond à la maquette ou au cahier des charges  
@@ -22,7 +22,7 @@ Les conditions qui doivent être remplies pour considérer la story comme “ter
 
 ---
 
-## 🧩 Tâches techniques
+## Tâches techniques
 Détaille les étapes concrètes de réalisation (code, fichiers, scripts, etc.)
 
 - [ ] Créer / modifier le ou les fichiers concernés  
@@ -32,17 +32,17 @@ Détaille les étapes concrètes de réalisation (code, fichiers, scripts, etc.)
 
 ---
 
-## 🧠 Notes
+## Notes
 Optionnel – observations ou rappels utiles.  
 *(Ex : Servira de base pour les autres pages / vérifier le responsive avant validation.)*
 
 ---
 
-### 🏷️ **Labels à appliquer**
+### **Labels à appliquer**
 `frontend`, `story`, `sprint1` *(adapter selon la story)*
 
-### 🧮 **Estimate (points)**
+### **Estimate (points)**
 3 *(adapter selon la complexité : 1, 2, 3, 5, 8, 13)*
 
-### 🧱 **Epic lié**
+### **Epic lié**
 `Frontend – Interface utilisateur`
