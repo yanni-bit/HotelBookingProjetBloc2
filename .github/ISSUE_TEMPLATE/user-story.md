@@ -38,11 +38,11 @@ Optionnel – observations ou rappels utiles.
 
 ---
 
-### **Labels à appliquer**
-`frontend`, `story`, `sprint1` *(adapter selon la story)*
+Labels :  
+Labels à appliquer
 
-### **Estimate (points)**
+Estimate :  
 3 *(adapter selon la complexité : 1, 2, 3, 5, 8, 13)*
 
-### **Epic lié**
-`Frontend – Interface utilisateur`
+Epic :  
+Epic lié
