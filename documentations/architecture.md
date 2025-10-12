@@ -34,4 +34,8 @@ hotel-booking/                          ← dossier racine du projet
 │
 ├── documentations/                     ← documentation technique (installation, architecture, API)
 │
+├── .github/                            ← dossier spécial GitHub
+│   └── ISSUE_TEMPLATE/                 ← dossier contenant les modèles d’issues
+│       └── user-story.md               ← modèle d’User Story
+│
 └── README.md                           ← documentation principale du projet
