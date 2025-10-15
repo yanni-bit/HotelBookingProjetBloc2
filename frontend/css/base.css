@@ -7,17 +7,87 @@
    ========================================================== */
 
 /* === 1. Reset (Eric Meyer) === */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -27,8 +97,17 @@ section, summary, time, mark, audio, video {
 }
 
 /* HTML5 display-role reset pour anciens navigateurs */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -36,13 +115,16 @@ body {
   line-height: 1;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-  content: '';
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
   content: none;
 }
 
@@ -87,9 +169,8 @@ ul {
   font-family: "bootstrap-icons" !important;
 }
 
-
 /* ==========================================================
-   HEADER
+   HEADER commun
    ---------------------------------------------------------- */
 
 .header {
@@ -99,7 +180,7 @@ ul {
 }
 
 .logo img {
-  max-width: 150px;
+  /* max-width: 300px; */
   height: auto;
   display: block;
 }
@@ -107,7 +188,7 @@ ul {
 .contact-icon {
   width: 50px;
   height: 50px;
-  background-color: #4dbea0;
+  background-color: #5fc8c2;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -159,7 +240,7 @@ ul {
 }
 
 .ribbon {
-  background-color: #4dbea0;
+  background-color: #5fc8c2;
   padding: 15px 20px;
   border-radius: 0 0 10px 10px;
   margin-right: 25px;
@@ -180,14 +261,48 @@ ul {
 }
 
 .ribbon ul li a {
+  background-color: #5fc8c2;
   color: white;
   text-decoration: none;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.ribbon ul li a:hover {
-  text-decoration: underline;
+.ribbon a {
+  text-decoration: none;
+}
+
+.ribbon-btn {
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0px;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  border-radius: 0;
+  border-bottom-color: #00000033;
+}
+
+.ribbon-btn:hover {
+  background-color: #5fc8c2;
+  border-bottom-color: #00000033;
+  color: #00000066;
+}
+
+.ribbon .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.ribbon .dropdown-item:hover {
+  background-color: #5fc8c2;
+  color: #00000066;
+}
+
+.ribbon .dropdown-menu {
+  padding: 0px;
+  margin: 0px;
+  background-color: #5fc8c2;
 }
 
 /* DESKTOP */
@@ -200,10 +315,14 @@ ul {
 
   .header {
     padding: 25px 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75%;
   }
 
   .contact-info {
-    gap: 15px;
+    gap: 0px;
+    flex-wrap: nowrap;
   }
 
   .search-wrapper {
