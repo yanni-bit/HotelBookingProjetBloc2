@@ -1,0 +1,259 @@
+/* ==========================================================
+   BASE.CSS – Projet HotelBookingProjetBloc2
+   ----------------------------------------------------------
+   Contient :
+   1. Reset CSS (Meyer)
+   2. Styles généraux : body, titres, textes, liens
+   ========================================================== */
+
+/* === 1. Reset (Eric Meyer) === */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset pour anciens navigateurs */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* === 2. Styles généraux === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #4dbea0;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #319c82;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+.bi {
+  font-family: "bootstrap-icons" !important;
+}
+
+
+/* ==========================================================
+   HEADER
+   ---------------------------------------------------------- */
+
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+  position: relative;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+}
+
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #4dbea0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+}
+
+.contact-label {
+  font-size: 12px;
+  color: #666;
+}
+
+.contact-number {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+}
+
+.search-wrapper form {
+  position: relative;
+  width: 100%;
+}
+
+.search-wrapper input {
+  border-radius: 25px !important;
+  padding-left: 20px !important;
+  padding-right: 45px !important;
+  border: 1px solid #ddd !important;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+}
+
+.search-wrapper .bi-search {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  pointer-events: none;
+}
+
+.ribbon {
+  background-color: #4dbea0;
+  padding: 15px 20px;
+  border-radius: 0 0 10px 10px;
+  margin-right: 25px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100px;
+}
+
+.ribbon ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ribbon ul li {
+  padding: 6px 0;
+}
+
+.ribbon ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ribbon ul li a:hover {
+  text-decoration: underline;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  body {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    padding: 25px 0;
+  }
+
+  .contact-info {
+    gap: 15px;
+  }
+
+  .search-wrapper {
+    margin-right: 160px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .header {
+    padding: 15px 0;
+  }
+
+  .logo img {
+    max-width: 120px;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .contact-label {
+    font-size: 11px;
+  }
+
+  .contact-number {
+    font-size: 14px;
+  }
+
+  .search-wrapper input {
+    font-size: 13px;
+    height: 38px;
+  }
+
+  .ribbon {
+    top: 0;
+    right: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 12px 15px;
+    margin-right: 5px;
+    min-width: 100px;
+  }
+
+  .ribbon ul li {
+    padding: 5px 0;
+  }
+
+  .ribbon ul li a {
+    font-size: 11px;
+  }
+}
