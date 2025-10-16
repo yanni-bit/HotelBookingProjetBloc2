@@ -1,2 +1,106 @@
-/* === RESPONSIVE.CSS === */
-/* Media queries pour tablette et mobile */
+/* ==========================================================
+   RESPONSIVE.CSS — Adaptations mobiles & tablettes
+   Projet : Hôtel Booking (Bloc 2)
+   ----------------------------------------------------------
+   Contient :
+   - Adaptations du HEADER (logo, contact, recherche, ruban)
+   - Ajustements généraux pour tablettes et mobiles
+   ========================================================== */
+
+
+/* ==========================================================
+   TABLETTES (≤ 992px)
+   ---------------------------------------------------------- */
+/* === HEADER === */
+@media (max-width: 992px) {
+
+  .base-header {
+    padding: 15px 8%;
+  }
+
+  .my-logo-img {
+    max-width: 150px;
+  }
+
+  .ribbon {
+    right: 5%;
+  }
+
+  .bloc-search-input {
+    max-width: 220px;
+  }
+}
+
+
+/* ==========================================================
+   MOBILES (≤ 767px)
+   ---------------------------------------------------------- */
+/* === HEADER === */
+@media (max-width: 767px) {
+
+  .base-header {
+    padding: 15px 0;
+  }
+
+  .header-top {
+    padding-right: 0;
+    flex-direction: column;
+  }
+
+  .ribbon {
+    right: 5px;
+    top: 0;
+    width: 120px;
+    padding: 12px 10px;
+  }
+
+  .my-logo-img {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+
+  .bloc-contact {
+    justify-content: flex-start;
+    gap: 10px;
+    margin: 10px 0;
+  }
+
+  .bloc-contact-ico {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .bloc-search {
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .bloc-search-input {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+/* ==========================================================
+   PETITS SMARTPHONES (≤ 480px)
+   ---------------------------------------------------------- */
+/* === HEADER === */
+@media (max-width: 480px) {
+
+  .my-logo-img {
+    max-width: 150px;
+  }
+
+  .ribbon {
+    width: 110px;
+    font-size: 11px;
+    padding: 10px 8px;
+  }
+
+  .bloc-contact-label,
+  .bloc-contact-number {
+    font-size: 11px;
+  }
+}

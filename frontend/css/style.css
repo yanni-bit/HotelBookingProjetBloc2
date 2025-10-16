@@ -1,2 +1,192 @@
-/* === STYLE.CSS === */
+/* ==========================================================
+   STYLE.CSS — Mise en page principale
+   Projet : Hôtel Booking (Bloc 2)
+   ----------------------------------------------------------
+   Contient les styles visuels des sections principales
+   ========================================================== */
 
+
+/* ==========================================================
+   HEADER GLOBAL
+   ---------------------------------------------------------- */
+.base-header {
+  background-color: #fff;
+  padding: 20px 10%;
+  position: relative;
+  width: 100%;
+}
+
+.header-top {
+  padding-right: 160px; /* espace réservé au ruban turquoise */
+}
+
+
+/* ==========================================================
+   LOGO
+   ---------------------------------------------------------- */
+.my-logo-img {
+  display: block;
+  height: auto;
+}
+
+
+/* ==========================================================
+   BLOC CONTACT
+   ---------------------------------------------------------- */
+.bloc-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 250px;
+  flex-shrink: 0;
+}
+
+.bloc-contact-ico {
+  width: 46px;
+  height: 46px;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 50%;
+  background-color: #5fc8c2;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  aspect-ratio: 1 / 1;
+}
+
+.text-contact {
+  text-align: left;
+}
+
+.bloc-contact-label {
+  font-size: 12px;
+  color: #858585;
+}
+
+.bloc-contact-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #858585;
+}
+
+
+/* ==========================================================
+   BLOC RECHERCHE
+   ---------------------------------------------------------- */
+.bloc-search {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.bloc-search-input {
+  border-radius: 25px !important;
+  padding-left: 20px !important;
+  padding-right: 45px !important;
+  border: 1px solid #ddd !important;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.bloc-search-ico {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+
+/* ==========================================================
+   RUBAN TURQUOISE
+   ---------------------------------------------------------- */
+.ribbon {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 140px;
+  min-width: 100px;
+  background-color: #5fc8c2;
+  border-radius: 0 0 10px 10px;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+.ribbon ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ribbon ul li {
+  padding: 6px 0;
+}
+
+.ribbon ul li a {
+  background-color: #5fc8c2;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ribbon-btn {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 0;
+  border: none;
+  border-bottom: 1px solid #00000033;
+  border-radius: 0;
+  background: none;
+}
+
+.ribbon-btn:hover {
+  background-color: #5fc8c2;
+  color: #00000066;
+}
+
+.ribbon .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.ribbon .dropdown-item:hover {
+  background-color: #5fc8c2;
+  color: #00000066;
+}
+
+.ribbon .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  background-color: #5fc8c2;
+}
+
+
+/* ==========================================================
+   SECTIONS GÉNÉRALES
+   ---------------------------------------------------------- */
+
+/* Menu principal */
+.menu {
+  background-color: #f7f7f7;
+  padding: 10px;
+}
+
+/* Contenu principal */
+.main {
+  padding: 20px;
+}
+
+/* Pied de page */
+.footer {
+  background-color: #f3f3f3;
+  padding: 15px;
+  text-align: center;
+}
