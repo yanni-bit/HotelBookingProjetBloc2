@@ -32,24 +32,26 @@
   <!-- ==========================================================
        HEADER GLOBAL
        ========================================================== -->
-  <header class="base-header position-relative">
+    <header class="base-header position-relative">
     <div class="container-fluid">
 
-      <!-- Ligne principale -->
-      <div class="row align-items-center header-top g-3">
+      <!-- Ligne principale du header -->
+      <div class="row align-items-center header-top g-3 overflow-protection">
 
         <!-- LOGO -->
-        <div class="col-12 col-md-4 col-lg-6">
+        <div class="col-12 col-md-4 col-lg-6 flex-left">
           <a href="index.html" class="my-logo d-block">
             <img src="assets/images/logo.png" alt="Book Your Travel" class="my-logo-img">
           </a>
         </div>
 
         <!-- CONTACT -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="bloc-contact d-flex align-items-center justify-content-lg-center gap-2">
-            <div class="bloc-contact-ico"><i class="bi bi-telephone"></i></div>
-            <div class="lh-sm text-start text-contact">
+        <div class="col-12 col-md-4 col-lg-3 flex-center">
+          <div class="bloc-contact flex-row flex-left">
+            <div class="bloc-contact-ico">
+              <i class="bi bi-telephone"></i>
+            </div>
+            <div class="lh-sm text-left">
               <div class="bloc-contact-label">24/7 Support number</div>
               <div class="bloc-contact-number">1-555-555-555</div>
             </div>
@@ -57,8 +59,8 @@
         </div>
 
         <!-- RECHERCHE -->
-        <div class="col-12 col-md-4 col-lg-3">
-          <div class="bloc-search">
+        <div class="col-12 col-md-4 col-lg-3 flex-right">
+          <div class="bloc-search overflow-protection">
             <form class="position-relative">
               <input type="search" class="form-control bloc-search-input" placeholder="Search">
               <i class="bi bi-search bloc-search-ico"></i>
@@ -67,7 +69,7 @@
         </div>
       </div>
 
-      <!-- RUBAN TURQUOISE À DROITE -->
+      <!-- RUBAN DROIT -->
       <div class="ribbon">
         <nav class="d-flex gap-2 flex-column align-items-stretch">
           <div class="dropdown">
@@ -99,10 +101,8 @@
           </div>
         </nav>
       </div>
-
     </div>
   </header>
-
   <!-- ==========================================================
        NAVIGATION
        ========================================================== -->

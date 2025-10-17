@@ -1,14 +1,55 @@
 /* ==========================================================
-   BASE.CSS — Fondations globales
-   Projet : Hôtel Booking (Bloc 2)
+   BASE.CSS — Hôtel Booking (Bloc 2)
    ----------------------------------------------------------
    Contient :
-   1. Reset (Meyer)
-   2. Variables & règles générales
+   1. Variables globales (couleurs, typos, espacements)
+   2. Reset CSS (Eric Meyer)
+   3. Styles généraux (body, titres, textes, liens)
+   4. Utilitaires CSS (flex, overflow, alignements)
    ========================================================== */
 
 
-/* === RESET (Eric Meyer) === */
+/* ==========================================================
+   1. VARIABLES GLOBALES
+   ---------------------------------------------------------- */
+
+:root {
+  /* === Couleurs principales === */
+  --turquoise: #5fc8c2;         /* Couleur de marque principale */
+  --turquoise-hover: #3db3aa;   /* Variante hover */
+  --turquoise-light: rgba(95, 200, 194, 0.1);
+  --turquoise-dark: rgba(95, 200, 194, 0.85);
+  --gris-clair: #f7f7f7;        /* Fond clair */
+  --gris-moyen: #858585;        /* Texte secondaire */
+  --gris-fonce: #333333;        /* Texte principal */
+  --blanc: #ffffff;
+  --noir: #000000;
+
+  /* === Couleurs d’état === */
+  --vert-validation: #3cb878;
+  --rouge-erreur: #e74c3c;
+  --jaune-attention: #f1c40f;
+
+  /* === Typographie === */
+  --font-principale: "Open Sans", Arial, sans-serif;
+  --font-secondaire: "Montserrat", sans-serif;
+
+  /* === Espacements === */
+  --espace-xs: 4px;
+  --espace-sm: 8px;
+  --espace-md: 16px;
+  --espace-lg: 32px;
+  --espace-xl: 64px;
+
+  /* === Largeurs globales === */
+  --conteneur-max: 1200px;
+}
+
+
+/* ==========================================================
+   2. RESET CSS (Eric Meyer)
+   ---------------------------------------------------------- */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,12 +81,6 @@ body {
   line-height: 1;
 }
 
-/* Supprime les puces */
-ul {
-  list-style: none;
-}
-
-/* Retire les guillemets des citations */
 blockquote, q {
   quotes: none;
 }
@@ -56,33 +91,35 @@ q::before, q::after {
   content: none;
 }
 
-/* Tables sans double bordures */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* === RÈGLES GÉNÉRALES === */
+
+/* ==========================================================
+   3. STYLES GÉNÉRAUX
+   ---------------------------------------------------------- */
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  background-color: #fff;
+  font-family: var(--font-principale);
   line-height: 1.6;
+  color: var(--gris-fonce);
+  background-color: var(--blanc);
 }
 
 a {
-  color: #5fc8c2;
+  color: var(--turquoise);
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #319c82;
+  color: var(--turquoise-hover);
   text-decoration: underline;
 }
 
@@ -90,4 +127,93 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+.bi {
+  font-family: "bootstrap-icons" !important;
+}
+
+
+/* ==========================================================
+   4. UTILITAIRES CSS — Flexbox, Alignement & Overflow
+   ---------------------------------------------------------- */
+
+/* === Alignements rapides === */
+
+/* Centre horizontalement et verticalement */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Espace entre deux éléments (utile pour header/nav) */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Aligne en bas */
+.flex-bottom {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Aligne à gauche */
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Aligne à droite */
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* Direction verticale (colonne) */
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* === Overflow & gestion du texte === */
+
+/* Empêche les débordements horizontaux dans un flex */
+.overflow-protection {
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Coupe proprement le texte long avec "..." */
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Empêche le retour à la ligne */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* === Espacements rapides === */
+
+/* Centre horizontalement */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Centre verticalement */
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
