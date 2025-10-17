@@ -1,0 +1,67 @@
+
+/* ==========================================================
+   ZONE LARGE INTERMÉDIAIRE (1250px → 992px)
+   ---------------------------------------------------------- */
+
+@media (max-width: 1250px) and (min-width: 768px) {
+  /* === Contact (empilement vertical) === */
+  .bloc-contact {
+    display: flex;
+    flex-direction: column; /* empile verticalement */
+    align-items: center; /* centre horizontalement */
+    text-align: center; /* aligne le texte */
+    gap: 5px; /* espace entre l’icône et le texte */
+  }
+  .base-header {
+    padding: 18px 2%;
+  }
+
+  .header-top {
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  /* Logo : réduit pour libérer de l'espace */
+  .header-top > .col-lg-6 {
+    flex: 1 1 38%;
+    max-width: 38%;
+  }
+
+  /* Contact : un peu plus large */
+  .header-top > .col-lg-3:first-of-type {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+
+  /* Recherche : plus de place à droite */
+  .header-top > .col-lg-3:last-of-type {
+    flex: 1 1 25%;
+    max-width: 25%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* Champ de recherche légèrement agrandi */
+  .bloc-search-input {
+    max-width: 190px;
+  }
+
+  .ribbon {
+    right: 2%;
+  }
+  /* Réduit la marge entre la recherche et le ruban à droite */
+  .bloc-search {
+    margin-right: 4%; /* avant 8-10% par héritage, on resserre */
+  }
+
+  /* Si la colonne utilise justify-content: flex-end, on l'équilibre un peu */
+  .header-top > .col-md-4:last-of-type {
+    justify-content: flex-end;
+    padding-right: 0; /* enlève tout padding superflu */
+  }
+
+  /* On peut aussi rapprocher légèrement le ruban pour l’harmoniser */
+  .ribbon {
+    right: 25%;
+  }
+}

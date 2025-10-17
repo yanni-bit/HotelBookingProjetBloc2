@@ -13,13 +13,8 @@
    ---------------------------------------------------------- */
 /* === HEADER === */
 @media (max-width: 992px) {
-
   .base-header {
     padding: 15px 8%;
-  }
-
-  .my-logo-img {
-    max-width: 150px;
   }
 
   .ribbon {
@@ -31,13 +26,11 @@
   }
 }
 
-
 /* ==========================================================
    MOBILES (≤ 767px)
    ---------------------------------------------------------- */
 /* === HEADER === */
 @media (max-width: 767px) {
-
   .base-header {
     padding: 15px 0;
   }
@@ -52,11 +45,6 @@
     top: 0;
     width: 120px;
     padding: 12px 10px;
-  }
-
-  .my-logo-img {
-    max-width: 180px;
-    margin: 0 auto;
   }
 
   .bloc-contact {
@@ -82,17 +70,11 @@
   }
 }
 
-
 /* ==========================================================
    PETITS SMARTPHONES (≤ 480px)
    ---------------------------------------------------------- */
 /* === HEADER === */
 @media (max-width: 480px) {
-
-  .my-logo-img {
-    max-width: 150px;
-  }
-
   .ribbon {
     width: 110px;
     font-size: 11px;
