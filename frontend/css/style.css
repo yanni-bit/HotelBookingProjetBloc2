@@ -45,7 +45,7 @@
   min-width: 46px;
   min-height: 46px;
   border-radius: 50%;
-  background-color: #5fc8c2;
+  background-color: var(--turquoise);
   color: #fff;
   display: flex;
   align-items: center;
@@ -108,10 +108,11 @@
   right: 10%;
   width: 140px;
   min-width: 100px;
-  background-color: #5fc8c2;
+  background-color: var(--turquoise);
   border-radius: 0 0 10px 10px;
   padding: 15px 20px;
   text-align: center;
+  z-index: 1000;
 }
 
 .ribbon ul {
@@ -125,7 +126,7 @@
 }
 
 .ribbon ul li a {
-  background-color: #5fc8c2;
+  background-color: var(--turquoise);
   color: white;
   text-decoration: none;
   font-size: 12px;
@@ -144,8 +145,8 @@
 }
 
 .ribbon-btn:hover {
-  background-color: #5fc8c2;
-  color: #00000066;
+  background-color: var(--turquoise);
+  color: var(--link-hover);
 }
 
 .ribbon .dropdown:hover .dropdown-menu {
@@ -153,14 +154,14 @@
 }
 
 .ribbon .dropdown-item:hover {
-  background-color: #5fc8c2;
-  color: #00000066;
+  background-color: var(--turquoise);
+  color: var(--link-hover);
 }
 
 .ribbon .dropdown-menu {
   padding: 0;
   margin: 0;
-  background-color: #5fc8c2;
+  background-color: var(--turquoise);
 }
 
 /* ==========================================================
@@ -168,9 +169,25 @@
    ---------------------------------------------------------- */
 
 /* Menu principal */
-.menu {
-  background-color: #f7f7f7;
-  padding: 10px;
+.navbar {
+  background-color: var(--marron);
+  padding: 5px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  background-color: #ffffff1a;
+}
+
+.navbar-brand {
+  color: var(--blanc);
+}
+
+.nav-link{
+  color: var(--blanc);
+  font-family: var(--font-principale);
 }
 
 /* Contenu principal */
@@ -183,4 +200,5 @@
   background-color: #f3f3f3;
   padding: 15px;
   text-align: center;
+  font-weight: 700;
 }

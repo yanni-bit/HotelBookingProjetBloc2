@@ -24,6 +24,8 @@
   --gris-fonce: #333333;        /* Texte principal */
   --blanc: #ffffff;
   --noir: #000000;
+  --marron: #d6c8c0;
+  --link-hover: #00000066;
 
   /* === Couleurs d’état === */
   --vert-validation: #3cb878;
